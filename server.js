@@ -7,7 +7,7 @@ const methodOverride = require('method-override');
 const cors = require('cors');
 const app = express();
 const db = mongoose.connection;
-requre('dotenv').config()
+require('dotenv').config()
 
 
 //////////////////////////////
