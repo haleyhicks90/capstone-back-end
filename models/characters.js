@@ -8,29 +8,19 @@ const mongoose = require('mongoose')
 //////////////////////////
 const characterSchema = new mongoose.Schema(
     {
-        name:
-            [
-                {
-                    first: String,
-                    last: String,
-                    née: String
-                }
-            ],
+        first_name: String,
+        last_name: String,
+        née: String,
         dob: String,
         dod: String,
         title: String,
-        spouse:
-            [
-                {
-                    first: String,
-                    last: String,
-                    née: String,
-                    marriage_date: String
-                }
-            ],
-        children: [String],
         num_of_eps: Number,
-        quotes: [String]
+        quotes: [String],
+        spouse_first_name: String,
+        spouse_last_name: String,
+        spouse_née: String,
+        marriage_date: String,
+        children: [String]
     }
 )
 

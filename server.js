@@ -13,7 +13,7 @@ requre('dotenv').config()
 //////////////////////////////
 // Controllers
 //////////////////////////////
-
+const charactersController = require('./controllers/characters.js')
 
 //////////////////////////////
 // Port
@@ -50,6 +50,7 @@ app.use(express.json())
 app.use(cors())
 app.use(methodOverride('_method'));
 
+app.use('/characters', charactersController)
 
 ////////////////////////////////
 // Routes
