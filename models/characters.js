@@ -1,11 +1,7 @@
-//////////////////////////
-// Dependencies
-//////////////////////////
+// ================= Dependencies ================== //
 const mongoose = require('mongoose')
 
-//////////////////////////
-// Character Schema
-//////////////////////////
+// ==================== Character Schema ================== //
 const characterSchema = new mongoose.Schema(
     {
         first_name: String,
@@ -27,7 +23,5 @@ const characterSchema = new mongoose.Schema(
 const Characters = mongoose.model('Character', characterSchema)
 
 
-//////////////////////////
-// Exporting
-//////////////////////////
+// ================= Exporting =================== //
 module.exports = Characters;

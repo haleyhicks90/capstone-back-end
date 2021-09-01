@@ -1,19 +1,13 @@
-//////////////////////////
-// Dependencies
-//////////////////////////
+// ============== Dependencies ================= //
 const express = require ('express')
 const router = express.Router()
 const Characters = require('../models/characters.js')
 
-
-//////////////////////////
-// Routes
-//////////////////////////
-
+// ================ Routes ==================== //
 // Index (GET)
 router.get('/', (req, res) => {
     Characters.find({}, (error, foundCharacters) => {
-        res.json
+        res.json(foundCharacters)
     })
 })
 
@@ -133,12 +127,13 @@ router.get('/seed', (req, res) => {
                 children: ['none']
             }
 
-        ]
+        ],
+        (error, data) => {
+            res.redirect('/')
+        }
     )
 })
 
 
-////////////////////////
-// Exporting
-////////////////////////
+// ================= Exporting =================== //
 module.exports = router;
