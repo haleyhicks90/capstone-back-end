@@ -32,15 +32,15 @@ mongoose.connect(MONGODB_URI ,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        useFindAndModify: false
+        // useFindAndModify: false
     }
 )
 
 
 // ======================= Routes ======================== //
 app.get('/', (req, res) => {
-    res.send('hello')
-    // res.redirect('/characters')
+    // res.send('hello')
+    res.redirect('/characters')
 })
 
 mongoose.connection.once('open', () => {
