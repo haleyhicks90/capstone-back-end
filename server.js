@@ -39,8 +39,8 @@ mongoose.connect(MONGODB_URI ,
 
 // ======================= Routes ======================== //
 app.get('/', (req, res) => {
-    // res.send('hello')
-    res.redirect('/characters')
+    res.send('hello')
+    // res.redirect('/characters')
 })
 
 mongoose.connection.once('open', () => {
