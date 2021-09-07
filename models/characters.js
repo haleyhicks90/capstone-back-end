@@ -12,12 +12,11 @@ const characterSchema = new mongoose.Schema(
         dod: String,
         title: String,
         num_of_eps: Number,
-        quotes: [String],
         spouse_first_name: String,
         spouse_last_name: String,
         spouse_née: String,
         marriage_date: String,
-        children: [String]
+        children: String,
     }
 )
 
