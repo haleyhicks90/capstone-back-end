@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 // ==================== Character Schema ================== //
 const characterSchema = new mongoose.Schema(
     {
+        img: String,
         first_name: String,
         last_name: String,
         née: String,

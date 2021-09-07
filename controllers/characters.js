@@ -37,9 +37,10 @@ router.get('/seed', (req, res) => {
     Characters.create(
         [
             {
+                img: '',
                 first_name:'Robert',
                 last_name: 'Crawley',
-                née: 'n/a',
+                née: 'none',
                 dob: '1866',
                 dod: 'still living',
                 title: '7th Earl of Grantham',
@@ -62,6 +63,7 @@ router.get('/seed', (req, res) => {
                     ]
             },
             {
+                img: '',
                 first_name: 'Cora',
                 last_name: 'Crawley',
                 née: 'Levinson',
@@ -87,6 +89,7 @@ router.get('/seed', (req, res) => {
                     ]
             },
             {
+                img: '',
                 first_name: 'Charles',
                 last_name: 'Carson',
                 née: 'n/a',
@@ -107,6 +110,7 @@ router.get('/seed', (req, res) => {
                 children: ['none']
             },
             {
+                img: '',
                 first_name: 'Elsie',
                 last_name: 'Carson',
                 née: 'Hughes',
